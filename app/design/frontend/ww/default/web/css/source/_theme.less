@@ -1,0 +1,84 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Luma theme overrides
+//  _____________________________________________
+
+//  Theme file should contain declarations (overrides) ONLY OF EXISTING variables
+//  Otherwise this theme won't be available for parent nesting
+//  All new variables should be placed in local theme lib or local theme files
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Color nesting
+//  ---------------------------------------------
+
+@theme__color__primary: @color-orange-red1;
+@theme__color__primary-alt: @color-orange-red4;
+@theme__color__secondary: @color-sky-blue1;
+
+
+
+//
+//  Typography
+//  ---------------------------------------------
+
+@font-family-name__base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-family__base: @font-family-name__base;
+@font-weight__thin: 200;
+@font-weight__light: 300;
+@font-weight__regular: 400;
+@font-weight__heavier: 500;
+@font-weight__semibold: 600;
+@font-weight__bold: 700;
+
+
+//  Color nesting
+@panel__background-color: @color-gray-middle1;
+@border-color__base: @color-orange-red4;
+
+
+//
+//  Buttons
+//  ---------------------------------------------
+
+@button__font-weight: @font-weight__semibold;
+
+//  Default = secondary button
+@button__background: @color-gray-darken0;
+@button__border: none;
+@button__hover__color: @button__color;
+@button__hover__background: darken(@button__background, 5%);
+@button__active__background: @color-gray-darken1;
+
+//  Primary button
+@button-primary__hover__color: @color-white;
+@button-primary__active__background: @link__hover__color;
+@button-primary__active__border: 1px solid @link__hover__color;
+@button-primary__active__color: @color-white;
+
+//  Button with icon
+@button-icon__line-height: @icon-font__line-height;
+
+
+
+//
+//  Popups
+//  ---------------------------------------------
+
+@popup__border: none;
+@popup-icon-font__color: @color-orange-red1;
+
+
+
+//
+//  Footer
+//  ---------------------------------------------
+
+@copyright__background-color: @color-black_dark;
