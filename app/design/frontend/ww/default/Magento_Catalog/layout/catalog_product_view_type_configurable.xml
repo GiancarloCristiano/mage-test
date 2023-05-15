@@ -1,0 +1,12 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.attributes.wrapper" remove="true"/>
+        <referenceBlock name="product.reviews.wrapper" remove="true"/>
+        <referenceBlock name="product.info.description" remove="true"/>
+        <referenceBlock name="product.info.overview" remove="true"/>
+
+        <move element="product.info.price" destination="product.info.form.options" before="product.info.options.wrapper.bottom"/>
+        <move element="product.info.stock.sku" destination="product.info.overview.wrapper" before="product.info.overview.container" />
+    </body>
+</page>

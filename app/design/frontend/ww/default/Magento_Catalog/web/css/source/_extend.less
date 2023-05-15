@@ -1,0 +1,40 @@
+& when (@media-common = true) {
+
+    .swatch-option {
+        min-width: 20px;
+        min-height: 10px;
+        padding: 3px;
+        border: 2px solid @secondary__color;
+
+        &.color, &.image {
+            border-radius: @button-circle__border-radius;
+
+            &.disabled {
+                &:after {
+                    background: linear-gradient(to right top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 82, 22, 0.75) 49%, rgba(255, 82, 22, 0.75) 51%, rgba(255, 255, 255, 0.5) 52%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 0) 100%);
+                    background: -moz-linear-gradient(to right top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 82, 22, 0.75) 49%, rgba(255, 82, 22, 0.75) 51%, rgba(255, 255, 255, 0.5) 52%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 0) 100%);
+                    background: -ms-linear-gradient(to right top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 82, 22, 0.75) 49%, rgba(255, 82, 22, 0.75) 51%, rgba(255, 255, 255, 0.5) 52%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 0) 100%);
+                    background: -o-linear-gradient(to right top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 82, 22, 0.75) 49%, rgba(255, 82, 22, 0.75) 51%, rgba(255, 255, 255, 0.5) 52%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 0) 100%);
+                    background: -webkit-gradient(linear, right top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(44%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0.5)), color-stop(48%, rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 82, 22, 0.75)), color-stop(51%, rgba(255, 82, 22, 0.75)), color-stop(52%, rgba(255, 255, 255, 0.5)), color-stop(55%, rgba(255, 255, 255, 0.5)), color-stop(56%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+                    background: -webkit-linear-gradient(to right top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 82, 22, 0.75) 49%, rgba(255, 82, 22, 0.75) 51%, rgba(255, 255, 255, 0.5) 52%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 0) 100%);
+                }
+            }
+
+            &:not(.disabled) {
+                &:hover {
+                    outline: 2px solid @theme__color__primary;
+                }
+            }
+        }
+
+        &.text {
+            border-radius: 6px;
+        }
+
+        &.selected {
+            border: 2px solid @theme__color__primary;
+            outline: none;
+            box-shadow: @button__hover__box-shadow;
+        }
+    }
+}
